@@ -4,7 +4,7 @@ import plotly.express as px
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("D:/dataScience/fifa_eda.csv")
+    return pd.read_csv("fifa_eda.csv")
 df = load_data()
 
 player_count = df.groupby('Nationality')['Name'].count().reset_index()
